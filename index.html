@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dreaming Mind">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta property="og:title" content="Apex of Minds">
+  <!--meta property="og:description" content=""-->
+  <meta content="/assets/DM.png" property="og:image" />
+  <title>Dreaming Mind</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='shortcut icon' type='image/x-icon' href='./assets/favicon.ico' />
+  <link rel="stylesheet" href="/css/toast.min.css">
+  <script src="/js/toast.min.js"></script>
+</head>
+
+<body>
+  <audio id="audioflux" src="assets/LeKtriQue - Break Your Skull.mp3" type="audio/mpeg" autoplay></audio>
+  <section id="home" class="fade-in">
+    <div class="content">
+      <div class="child">
+        <img src="./assets/icon.png" alt="dreamingmind.one" class="site-logo fade-in">
+        <a target="_blank" 
+        href="dreamsrx34e4uu3dq5eyc5lh3e2ol7eksbfewjionu762tvr7lsawqqd.onion" class="buttonSite">
+          <h1 class="lead"><span class="grad">Also available on </span><span class="grad2">Tor</span><span class="blink_text grad">_</span></h1>
+        </a>
+        <a class="buttonSite" href="./pages/welcome.html">
+          <h1 class="lead" onclick="window.location.href='./pages/welcome.html';">
+            <span class="grad">Click to Enter</span><span class="blink_text grad">_</span>
+          </h1>
+        </a>
+        <br>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Toast({
+      message: 'Now Playing \"Break Your Skull\" by leKtriQue & Proxy !',
+      type: 'default',
+      customButtons: [{
+          text: "Play",
+          onClick: function () {
+            let flux = document.getElementById("audioflux")
+            //true play, false paused
+            flux.play()
+          }
+        },
+        {
+          text: "Pause",
+          onClick: function () {
+            let flux = document.getElementById("audioflux")
+            flux.pause()
+          }
+        },
+        {
+          text: "Save",
+          onClick: function () {
+            window.open(
+              '/assets/LeKtriQue - Break Your Skull.mp3',
+              '_blank'
+            )
+          }
+        }
+      ]
+    })
+  </script>
+  <iframe id="invisible" style="display:none;"></iframe>
+</body>
+
+</html>

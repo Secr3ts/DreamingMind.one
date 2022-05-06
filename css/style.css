@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Aqua';
+  src: url("../assets/aqua.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(/assets/OpenSans-Regular.ttf);
+}
+
+
+.lead {
+    font-size: 1.5rem;
+    margin: 0.6rem;
+    overflow-wrap: break-word;
+    font-family: 'Urbanist', Arial, Helvetica, sans-serif;
+  }
+
+section h1 {
+    font-size: 4.5rem;
+    padding: .25rem;
+}
+
+.site-logo {
+    width: 70%;
+}
+/* Section and content */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    /* background-color: rgba(82, 82, 82, 0.5); */
+}
+
+.button {
+    margin: 0em .6em 0em .6em;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-image: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(34, 34, 34) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.2s ease-in;
+
+}
+
+.button:hover {
+    background-size: 100% 88%;
+}
+
+a.buttonSite {
+  background-color: transparent;
+}
+
+
+section#home .child {
+    max-width: 60%;
+}
+
+section .content {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.child {
+    flex-grow: 1;
+    margin: .5rem;
+}
+
+section#home {
+    background: url('../assets/background.jpg');
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    /*opacity: 0.65;*/  
+    background-color: #021825;
+}
+
+
+/* Mobile second... kek */
+@media only screen and (max-width: 750px) {
+    section h1 {
+        font-size: 2.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+.fade-in {
+    animation: fadeIn ease 1.0s;
+    -webkit-animation: fadeIn ease 1.0s;
+    -moz-animation: fadeIn ease 1.0s;
+    -o-animation: fadeIn ease 1.0s;
+    -ms-animation: fadeIn ease 1.0s;
+  }
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.blink_text
+{
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+    color: whitesmoke;
+}
+
+@-moz-keyframes blinker
+{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker
+{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker
+{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+ }
+
+/*.grad {
+  background: rgb(227,189,67);
+  background: linear-gradient(180deg, rgba(227,189,67,1) 0%, rgba(190,179,144,1) 35%, rgba(111,119,143,1) 78%, rgba(26,39,78,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+
+.grad {
+  background: #757575;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grad2 {
+  background: #673ab7;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h2, h3 {
+  font-family: 'OpenSans' !important;
+}
+
+.toastjs-btn {
+  font-family: 'Opensans' !important;
+}
+
+.toastjs {
+  background-color: rgb(213, 218, 247) !important;
+}
+
+.toastjs-btn--close {
+  background-color: rgb(247, 84, 84) !important;
+}
+
+.line {
+  height: 1px;
+  background: black;
+}
